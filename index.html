@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First DOM Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/stiky.css">
+
+</head>
+
+<body>
+    <div id="hide-all">
+        <header id="navbar" class="sticky top-0 z-50 backdrop-blur">
+            <div class="flex justify-around  bg-[#F9F7F3] mb-20 pb-4">
+                <button id="blog-id" class="btn text-xl font-bold bg-[#B4F461] px-3 lg:px-5 m-3"><span
+                        class="blog-btn">Blog</span></button>
+                <div class="flex items-center gap-4">
+                    <img src="images/logo.png" alt="">
+                    <h2 class="font-bold text-2xl hidden lg:block  ">Donate Bangladesh</h2>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img src="images/coin.png" alt="">
+                    <button id="main-amount" class="btn text-2xl">5500 BDT</button>
+                </div>
+            </div>
+            <div class="text-center gap-3 mb-6">
+                <button id="donation-button"
+                    class=" donation_button btn btn-xs sm:btn-sm md:btn-md lg:btn-lg font-bold bg-[#B4F461]">Donation</button>
+                <button id="history-button"
+                    class=" history_button ml-3 btn btn-xs sm:btn-sm md:btn-md lg:btn-lg font-bold">History</button>
+            </div>
+        </header>
+
+        <main>
+            <div id="main-section">
+                <!-- First Hero  section started -->
+                <section class=" flex items-center justify-center gap-12">
+                    <div class=" flex-col lg:flex-row card card-side bg-base-100 shadow-xl">
+                        <figure>
+                            <img src="images/noakhali.png" alt="Movie" />
+                        </figure>
+                        <div class="card-body">
+                            <div class="flex items-center gap-4">
+                                <img src="images/coin.png" alt="">
+                                <button id="card-amount" class="btn text-2xl">20 BDT</button>
+                            </div>
+                            <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                            <p>The recent floods in Noakhali have caused significant damage to <br> homes
+                                infrastructure.
+                                Your
+                                donation will help provide
+                                essential <br>supplies and to those affected by this disaster. Every contribution, <br>
+                                big
+                                or small,
+                                makes difference. Please
+                                join us in supporting the relief <br> efforts and making a positive impact on the lives
+                                of
+                                those
+                                in
+                                need.</p>
+
+                            <input id="input-field" type="text" placeholder="Write your amount"
+                                class="input input-bordered input-primary w-full max-w-xs" /> <br>
+                            <br>
+                            <button id="add-money-button"
+                                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461] font-bold">Donation
+                                Now</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- First Hero section ended -->
+
+                <!-- Second Hero section started -->
+                <section class=" flex items-center justify-center gap-12 mb-3 lg:mb-10">
+                    <div class="flex-col lg:flex-row  card card-side bg-base-100 shadow-xl">
+                        <figure>
+                            <img src="images/feni.png" alt="Movie" />
+                        </figure>
+                        <div class="card-body">
+                            <div class="flex items-center gap-4">
+                                <img src="images/coin.png" alt="">
+                                <button id="card-amount-2" class="btn text-2xl">600 BDT</button>
+                            </div>
+                            <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+                            <p>The recent floods in Noakhali have caused significant damage to <br> homes
+                                infrastructure.
+                                Your
+                                donation will help provide
+                                essential <br>supplies and to those affected by this disaster. Every contribution, <br>
+                                big
+                                or small,
+                                makes difference. Please
+                                join us in supporting the relief <br> efforts and making a positive impact on the lives
+                                of
+                                those
+                                in
+                                need.</p>
+
+                            <input id="input-field-2" type="text" placeholder="Write your amount"
+                                class="input input-bordered input-primary w-full max-w-xs" /> <br>
+                            <br>
+                            <button id="add-money-button-2"
+                                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461] font-bold">Donation
+                                Now</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- Second Hero section ended -->
+
+                <!-- Third Hero Section started  -->
+                <section class=" flex items-center justify-center gap-12 mb-3 lg:mb-6">
+                    <div class=" flex-col lg:flex-row  card card-side bg-base-100 shadow-xl">
+                        <figure>
+                            <img src="images/quota-protest.png" alt="Movie" />
+                        </figure>
+                        <div class="card-body">
+                            <div class="flex items-center gap-4">
+                                <img src="images/coin.png" alt="">
+                                <button id="card-amount-3" class="btn text-2xl">20 BDT</button>
+                            </div>
+                            <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
+                            <p>The recent floods in Noakhali have caused significant damage to <br> homes
+                                infrastructure.
+                                Your
+                                donation will help provide
+                                essential <br>supplies and to those affected by this disaster. Every contribution, <br>
+                                big
+                                or small,
+                                makes difference. Please
+                                join us in supporting the relief <br> efforts and making a positive impact on the lives
+                                of
+                                those
+                                in
+                                need.</p>
+
+                            <input id="input-field-3" type="text" placeholder="Write your amount"
+                                class="input input-bordered input-primary w-full max-w-xs" /> <br>
+                            <br>
+                            <button id="add-money-button-3"
+                                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461] font-bold">Donation
+                                Now</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Third Hero Section ended -->
+
+
+            <!-- Transaction section started  -->
+            <div id="history-id">
+
+                <div id="history-container" class="container mx-auto  text-xl  ">
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <!-- ----------------------------- -->
+        <!-- Home page started  -->
+
+        <section id="faq-section" class="hidden">
+            <!-- faq section started  -->
+            <main class="container mx-auto">
+                <div class="join join-vertical w-full">
+                    <h1 class="text-5xl font-bold mb-3 lg:mb-6">Important FAQ</h1>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">What is Document Object Model(DOM)?</div>
+                        <div class="collapse-content">
+                            <p>The Document Object Model (DOM) is a programming interface for web documents. It
+                                represents
+                                the page so that programs
+                                can change the document structure, style, and content.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">How do you select element from a DOM?</div>
+                        <div class="collapse-content">
+                            <p>The getElementById() method of the Document interface returns an Element object
+                                representing
+                                the element whose id
+                                property matches the specified string. Since element IDs are required to be unique if
+                                specified, they're a useful way to
+                                get access to a</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">What is the even delegation in the content of
+                            the
+                            DOM, and why is it useful?</div>
+                        <div class="collapse-content">
+                            <p>Event delegation refers to the process of using event propagation (bubbling) to handle
+                                events
+                                at a higher level in the
+                                DOM than the element on which the event originated. It allows us to attach a single
+                                event
+                                listener for elements that
+                                exist now or in the future</p>
+                        </div>
+                    </div>
+
+
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">How do you manipulate an elements attribute and
+                            styles using the DOM?</div>
+                        <div class="collapse-content">
+                            <p>If you want to change other attributes like id , href , or src , you can use the
+                                setAttribute() method. The
+                                setAttribute() method accepts two arguments: The name of the attribute to set. The value
+                                of
+                                the attribute to set</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- faq section ended  -->
+
+
+        </section>
+        <!-- home page ended -->
+
+
+
+    </div>
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box flex flex-col items-center">
+            <div class="flex justify-center">
+                <h1 class="text-3xl font-bold">Congratulations!</h1>
+                <img src="images/coin.png " alt="coin" />
+            </div>
+            <p class="py-4 font-bold">You Have Donated for Humankind</p>
+            <h1 class="text-2xl font-bold">Successfully</h1>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn font-bold text-sm">Close Button</button>
+                </form>
+            </div>
+        </div>
+               
+    </dialog>
+
+    <script src="JS/addMoney.js"></script>
+    <script src="JS/addMoney-2.js"></script>
+    <script src="JS/addMoney-3.js"></script>
+    <script src="JS/addMoneyFunction.js"></script>
+    <script src="JS/features.js"></script>
+
+
+</body>
+
+</html>
